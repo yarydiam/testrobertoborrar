@@ -6,7 +6,7 @@
 #    By: yadiaman <yadiaman@student.42malaga.com    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/04/15 19:51:55 by yadiaman          #+#    #+#              #
-#    Updated: 2024/05/29 14:07:19 by yadiaman         ###   ########.fr        #
+#    Updated: 2024/05/31 08:35:07 by yadiaman         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -82,7 +82,8 @@ clean:
 	rm -f $(OBJS) $(OBJS_BONUS)
 
 fclean: clean
-	rm -f $(NAME)
+	rm -f $(NAME) $(OBJS)
+	rm -f $(NAME) $(OBJS_BONUS)
 
 re:	fclean all
 
